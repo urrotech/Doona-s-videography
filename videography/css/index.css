@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ========  HOME   ======== */
+.home{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(../images/bannerr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.portfolio{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(../images/banner-portfolio.jpg);
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contact-sec{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* === Navbar === */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 150px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.pages{
+    display: flex;
+}
+.navbar-pages{
+    margin: 20px;
+}
+.page{
+    list-style: none;
+    padding: 10px;  
+    margin: 20px;
+}
+.page-link{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000000;
+    font-family: cursive;
+}
+.page-link:hover{
+    color: #fff;
+}
+.active a, .page-link:hover{
+    color: #fff;
+}
+/* home */
+.home-btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+}
+.get-started{
+    text-decoration: none;
+    font-family: candara;
+    color: #111;
+    padding: 15px;
+    width: 20%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #111;
+}
+
+.get-started:hover{
+    background: #58595b;
+    transition: 0.4s;
+    color: whitesmoke;
+    border: 1px solid #58595b;
+}
+/* about */
+.about{
+    padding: 3%;
+    display: flex;
+    background-color: #fff;
+}
+.about-left{
+    margin: 5%;
+}
+.about-img{
+    width: 570px;
+    height: 340px;
+    border-radius: 8px;
+}
+.about-right{
+    margin: 10%;
+}
+.about-bg{
+    background-color: #E9EDF6;
+    height: 200px;
+    width: 300px;
+    box-shadow: 2px 2px 7px 3px rgba(233,237,246,0.75);
+    -webkit-box-shadow: 2px 2px 7px 3px rgba(233,237,246,0.75);
+    -moz-box-shadow: 2px 2px 7px 3px rgba(233,237,246,0.75);
+}
+.about-front{
+    border: 3px solid #E9EDF6;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    margin-top: 17px;
+    margin-left: 18px;
+    padding: 20px;
+}
+.about-heading{
+    font-size: 20px;
+    font-family: Arial;
+    font-family: monospace;
+    margin-top: 15px;
+    }
+.about-sub-heading{
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #F75435;
+}
+/* footer */
+.footer{
+    background-color: #E9EDF6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.social-icons{
+    margin: 10px;
+    align-items: center;
+}
+.copyright{
+    font-family: monospace;
+    color: #E9EDF6;
+}   
+.icons{
+    width: 30px;
+    margin: 5px;
+}
+.footer-doona{
+    font-weight: bold;
+    color: #F75435;
+    text-decoration: none;
+}
+/* portfolio */
+.planss{
+    text-align: center;
+    font-size: 60px;
+    font-family: candara;
+    color: #fff;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+.portfolio-plans{
+    background-color: #E9EDF6;
+}
+.plans-heading{
+    text-align: center;
+    font-family: cursive;
+    padding-top: 100px;
+}
+.plans-sub-heading{
+    text-align: center;
+    font-family: monospace;
+    padding: 10px;
+    font-size: 15px;
+}
+.main-container{
+    background-color: #E9EDF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+.contain{
+    position: relative;
+    top: 30%;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.contain .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.contain .card:hover
+{
+    height: 380px;
+}
+.contain .card .img-box{
+    position: relative;
+    width: 260px;
+    height: 215px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.contain .card .img-box img{
+    width: 100%;
+    border-radius: 4px;
+    height: 210px;
+    object-fit: cover;
+}
+.contain .card .content{
+    position: relative;
+    margin-top: -110px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.contain .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay: 0.3s;
+}
+.plan-heading{
+    font-size: 20px;
+    font-family: monospace;
+    color: #F75435;
+    margin-bottom: 10px;
+}
+.plan-sub-heading{
+    font-size: 18px;
+    font-family: Arial;
+}
+.plan-footer{
+    position:relative;
+    /* top: 80px; */
+    background-color: #E9EDF6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* contact */
+.contact{
+    text-align: center;
+    font-family: candara;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+    color: #fff;
+}
+.map-section{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.map-content{
+    padding: 140px;
+    font-weight: normal;
+    font-family: monospace;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 60px;
+}
+.map-hours{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #F75435;
+    font-family: cursive;
+}
+.map-address{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: cursive;
+    color: #F75435;
+}
+.map{
+    margin-top: 70px;
+}
